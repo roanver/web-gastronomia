@@ -1,0 +1,44 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0194be;
+    padding: 10px 0px;
+}
+
+.Header__Logo img {
+    width: 100px;
+    border-radius: 20px;
+    margin-left: 20px;
+    transition: transform .3s;
+}
+
+.Header__Logo img:hover {
+    transform: scale(1.05);
+    justify-content: spac;
+}
+
+
+
+.Header__Nav {
+    margin-right: 20px;
+}
+
+.Header__Nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 8px;
+    font-size: 18.8px;
+    transition: all .3s;
+}
+
+
+.Header__Nav a:hover {
+    color: #ccc;
+}
