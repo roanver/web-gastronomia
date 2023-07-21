@@ -1,0 +1,41 @@
+/* Globales */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+:root{
+    --primario: #f07e13;
+    --secundario: #0194be;
+    --terciario: #410936;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 2.1rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
