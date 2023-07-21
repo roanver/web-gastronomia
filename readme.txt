@@ -5,3 +5,5 @@ Presentate y pon tu equipo:
 #Mateo Ternovic -Equipo 2- Desarrollo de Home Page. Saludos!
 
 #Xardimods - Equipo 1 - Desarrollador de la págna de recetas. ¡Muy buenas!
+
+#Charcoal - Equipo 3 - Desarrollo de la página de noticias. Saludos a todos!
