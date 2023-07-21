@@ -39,6 +39,11 @@ p{
     font-size: 1.6rem;
 }
 
+.Header__Logo img{
+    width: 6rem !important;
+    height: 6rem;
+}
+
 
 
 
