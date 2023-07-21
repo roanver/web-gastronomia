@@ -159,6 +159,59 @@ h2 , p {
 
 
 /****************** INICIO AREA DE TRABAJO EQUIPO 3 NOTICIAS.HTML ********************/
+/* Noticias-Main*/
 
+/* Foro */
+.no-container{
+}
 
-/****************** FIN AREA DE TRABAJO EQUIPO 2 NOTICIAS.HTML ********************/
+.no-forum-btn{
+    text-decoration: none;
+    color: black;
+}
+
+.no-container__foro{
+
+}
+
+.foro__article{
+
+}
+
+.foro__imagen{
+
+}
+
+.foro__titulo{
+
+}
+
+.foro__subtitulo{
+
+} /* Es probable que algunas clases resulten "innecesarias". En caso de que no haya que darle propiedades específicas a "x" bloque o "x" elemento, favor de eliminar los selectores correspondientes (ej: .forum__subtitulo) de la hoja de estilos. */
+
+.foro__parrafo{
+
+}
+/* Sidebar */
+.no-container__sidebar{
+
+}
+
+.sidebar__btn{
+    text-decoration: none;
+}
+
+.sidebar__article{
+
+}
+
+.sidebar__imagen{
+
+}
+
+.sidebar__titulo{
+    
+}
+
+/****************** FIN AREA DE TRABAJO EQUIPO 3 NOTICIAS.HTML ********************/
