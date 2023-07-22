@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+
+:root{
+    --primario: #f07e13;
+    --secundario: #0194be;
+    --terciario: #410936;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 2.1rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+
+/****************** INICO AREA DE TRABAJO EQUIPO 2 INDEX.HTML ********************/
+/*Header*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primario);
+    padding: 10px 0px;
+}
+
+.Header__Logo img {
+    width: 100px;
+    border-radius: 20px;
+    margin-left: 20px;
+    transition: transform .3s;
+}
+.Header__Logo img{
+    width: 6rem !important;
+    height: 6rem;
+}
+
+.Header__Logo img:hover {
+    transform: scale(1.05);
+    justify-content: spac;
+}
+
+
+.Header__Nav {
+    margin-right: 20px;
+}
+
+.Header__Nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 8px;
+    font-size: 18.8px;
+    transition: all .3s;
+}
+
+
+.Header__Nav a:hover {
+    color: #ccc;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-decoration-thickness: 1.5px;
+}
+/*Header*/
+
+/*Body*/
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    margin: 40px   auto;
+    border-radius: 51px;
+}
+.contenido {
+    display: flex;
+    width: 80rem;
+    height: 40rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -30px;
+    
+}
+
+.contenido h2{
+    color:wheat;
+    font-size: 5.5rem;
+    margin: 1rem;
+    
+    
+}
+
+.contenido p {
+    color: wheat;
+    margin: 1rem;
+    font-size: 2rem;
+}
+.contenido .boton {
+    width: 20rem;
+    height: 5rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    color:#410936;
+    background-color: #f07e13;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: transparent;
+    color: #f07e13;
+    border: 1px solid #f07e13;
+    transform: scale(1.05);
+}
+
+
+.tarjetas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.product {
+    transition: transform .3s;
+box-shadow: 0px 0px 16px 0px #cccccc;
+background-color: #eee;
+width: 250px;
+padding: 20px;
+margin: 40px 20px;
+text-align: center;
+border-radius: 20px;
+}
+.product:hover{
+    transform: scale(1.05);
+}
+
+
+.product img {
+    width: 200px;
+}
+.product h2,p{
+color: black;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Body*/
+
+/****************** FIN AREA DE TRABAJO EQUIPO 2 INDEX.HTML ********************/
+
+
+
+
+/****************** INICIO AREA DE TRABAJO EQUIPO 1 RECETAS.HTML ********************/
+
+
+/****************** FIN AREA DE TRABAJO EQUIPO 1 RECETAS.HTML ********************/
+
+
+
+
+/****************** INICIO AREA DE TRABAJO EQUIPO 3 NOTICIAS.HTML ********************/
+/* Noticias-Main*/
+
+/* Foro */
+.no-container{
+}
+
+.no-forum-btn{
+    text-decoration: none;
+    color: black;
+}
+
+.no-container__foro{
+
+}
+
+.foro__article{
+
+}
+
+.foro__imagen{
+
+}
+
+.foro__titulo{
+
+}
+
+.foro__subtitulo{
+
+} /* Es probable que algunas clases resulten "innecesarias". En caso de que no haya que darle propiedades específicas a "x" bloque o "x" elemento, favor de eliminar los selectores correspondientes (ej: .forum__subtitulo) de la hoja de estilos. */
+
+.foro__parrafo{
+
+}
+/* Sidebar */
+.no-container__sidebar{
+
+}
+
+.sidebar__btn{
+    text-decoration: none;
+}
+
+.sidebar__article{
+
+}
+
+.sidebar__imagen{
+
+}
+
+.sidebar__titulo{
+    
+}
+
+/****************** FIN AREA DE TRABAJO EQUIPO 3 NOTICIAS.HTML ********************/

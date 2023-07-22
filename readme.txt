@@ -1,7 +1,10 @@
-Presentate
-Puedes actualizar?
+Presentate y pon tu equipo:
 
+#Rodrigo Vergara -Equipo 2 - Desarrollo de Home Page. Saludos!!
+#Mateo Ternovic -Equipo 2- Desarrollo de Home Page. Saludos!
+#Matias De Azcuenaga -Equipo 2- Desarrollo de home page. saludos!!
 
-HOLA YO ACTUALICÉ ESTE TEXTO XDDDD  
+#Xardimods - Equipo 1 - Desarrollador de la págna de recetas. ¡Muy buenas!
+#Silvio - Equipo 1 - Desarrollador de la págna de recetas.
 
-yo actualize este texto, aprendan pytohn es muy bueno
+#Charcoal - Equipo 3 - Desarrollo de la página de noticias. Saludos a todos!
