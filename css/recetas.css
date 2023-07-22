@@ -95,7 +95,7 @@
 }
 
 .reset_sort:hover{
-    background-color: #f1f1f1;
+    background-color: transparent;
     color: var(--primario);
 }
 
@@ -103,13 +103,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .recipe_card{
-    background-color: var(--primario);
-    height: 35rem;
     display: flex;
+    background-color: var(--primario);
+    height: 30rem;
+    width: 27rem;
     flex-direction: column;
     border-radius: 0.8rem;
     overflow: hidden;
@@ -121,8 +122,7 @@
 }
 
 .recipe_card .card_img{
-    width: 27rem;
-    height: 60rem;
+    height: 19rem;
     background-position: center;
     background-image: url(../img/DreamShaper_v7_Krabby_Patty_1-min.jpg);
     background-size: cover;
@@ -133,7 +133,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem;
-    height: 100%;
+    flex-grow: 1;
     color: var(--cards-font-color);
 }
 
