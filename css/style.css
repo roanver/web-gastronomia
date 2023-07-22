@@ -101,6 +101,8 @@ p{
 .contenedor {
     display: flex;
     justify-content: center;
+    margin: 40px   auto;
+    border-radius: 51px;
 }
 .contenido {
     display: flex;
@@ -111,19 +113,29 @@ p{
     justify-content: center;
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -30px;
     
 }
 
-
-
-h2 , p {
+.contenido h2{
     color:wheat;
+    font-size: 5.5rem;
     margin: 1rem;
+    
+    
 }
-.btn {
-    width: 12rem;
-    height: 3rem;
+
+.contenido p {
+    color: wheat;
+    margin: 1rem;
+    font-size: 2rem;
+}
+.contenido .boton {
+    width: 20rem;
+    height: 5rem;
     margin-top: 3rem;
+    font-size: 2rem;
     color:#410936;
     background-color: #f07e13;
     border: none;
@@ -131,7 +143,7 @@ h2 , p {
     cursor: pointer;
 }
 
-.btn:hover{
+.boton:hover{
     background-color: transparent;
     color: #f07e13;
     border: 1px solid #f07e13;
