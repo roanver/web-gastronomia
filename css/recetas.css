@@ -152,9 +152,8 @@ html{
         padding: 0 2rem;
     }
 }
-@media (max-width: 880px){
+@media (max-width: 900px){
     .recipe-sort{
         display: none;
-        transform: translateY();
     }
 }
