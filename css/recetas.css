@@ -2,6 +2,11 @@
     --cards-font-color: #f1f1f1;
 }
 
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
 .site-container{
     width: min(100%, 1200px);
     margin: 4rem auto 0;
@@ -140,4 +145,16 @@
 .recipe_card .card_details{
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 1235px){
+    .site-container{
+        padding: 0 2rem;
+    }
+}
+@media (max-width: 880px){
+    .recipe-sort{
+        display: none;
+        transform: translateY();
+    }
 }
