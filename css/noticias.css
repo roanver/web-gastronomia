@@ -151,66 +151,10 @@
     height: 5rem;
     fill: white;
     margin: 0;
-    transition: height .3s;
-    transition: height .3s;
+    transition: transform .3s;
 }
 
 .redes__icon svg:hover{
-    width: 5.4rem;
-    height: 5.4rem;
-}
-
-
-
-
-
-.Footer {
-    margin-top: 4rem;
-    background-color: var(--primario);
-    display: flex;
-    padding-top: 1rem;
-    padding: 2rem;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.Footer__Icons i {
-    padding: 0px .8rem;
-    font-size: 25px;
-    transition: transform .1s;
-}
-
-.Footer__Icons i:hover {
     transform: scale(1.1);
 }
-
-.Footer__Copy {
-    padding-top: 1.5rem;
-    padding-bottom: .8rem;
-    color: #eee;
-}
-
-.Footer__Links {
-    display: flex;
-    justify-content: center;
-}
-
-.Footer__Links a {
-    color: #eee;
-    font-size: 1.8rem;
-}
-
-.Footer__Links a:hover {
-    transform: scale(1.03);
-}
-
-.Footer__Links p {
-    padding: 0px 1rem;
-    color: #eee;
-
-}
-
-
-
 

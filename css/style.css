@@ -233,13 +233,13 @@ color: black;
     margin: 2rem 0 0 0;
 }
 
-::placeholder {
+.contenedor-p input::placeholder {
     font-size: medium;
     margin-left:1rem;
 
 }
 
-form input{
+.contenedor-p form input{
     width:40rem;
     height: 5rem;
     margin: 1.5rem 0 0 0 ;
@@ -248,7 +248,7 @@ form input{
     border:  2px solid #ffa4247c;
     border-radius: 5px;
 }
-input:focus{
+.contenedor-p input:focus{
     outline: none; 
     border: 2px solid #FFA424;   
 }
@@ -293,17 +293,19 @@ input:focus{
 .Footer {
     background-color: var(--primario);
     display: flex;
-    padding-top: 1rem;
-    padding: 2rem;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     text-align: center;
+    margin-top: 4rem;
+    height: calc(15vh + 5rem);
+    padding: 20px 0;
 }
 
 .Footer__Icons i {
     padding: 0px .8rem;
     font-size: 25px;
     transition: transform .1s;
+    cursor: pointer;
 }
 
 .Footer__Icons i:hover {
