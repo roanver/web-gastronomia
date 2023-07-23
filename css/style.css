@@ -102,7 +102,6 @@ p{
     display: flex;
     justify-content: center;
     margin: 40px   auto;
-    border-radius: 51px;
 }
 .contenido {
     display: flex;
@@ -180,9 +179,6 @@ border-radius: 20px;
 }
 .product h2,p{
 color: black;
-
-
-
 
 }
 
