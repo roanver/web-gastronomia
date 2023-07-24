@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,18 @@
     <link rel="stylesheet" href="./css/recetas.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>- Recetas</title>
-
-    
-    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header class="Header">
         <div class="Header__Logo">
             <img src="img/logo.png" alt="logo">
         </div>
-        <nav class="Header__Nav">
+        <nav class="Header__Nav Header__a">
             <a href="Index.html">Inicio</a>
             <a href="./noticias.html">Noticias</a>
             <a href="./recetas.html">Recetas</a>
@@ -25,21 +28,27 @@
     <main class="site-container">
         <section class="recipes__title">
             <h1>RECETAS</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus explicabo sequi illum. Provident neque dolore corrupti quas amet sequi. Possimus, hic. Quod voluptatum corporis ullam ducimus reiciendis consequatur accusantium praesentium.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus explicabo sequi illum. Provident neque
+                dolore corrupti quas amet sequi. Possimus, hic. Quod voluptatum corporis ullam ducimus reiciendis
+                consequatur accusantium praesentium.</p>
         </section>
 
         <section class="recipes">
             <aside class="recipe-sort">
                 <form action="#">
                     <label>
-                        <h3>Busqueda avanzada</h3>
+                        <div>
+                            <h2 style="font-size: 3rem; margin-bottom: 3rem;">Filtros</h2>
+                        </div>
+
+                        <h3 style="font-size: 1.9rem; margin-bottom: 1rem;">Búsqueda Avanzada:</h3>
                         <div class="search-box">
                             <i class="bi bi-search"></i>
                             <input type="text" placeholder="Busca receta">
                         </div>
                     </label>
                     <div>
-                        <h3>Tiempo de preparación</h3>
+                        <h3 style="font-size: 1.87rem;">Tiempo de Preparación:</h3>
                         <div class="time-box">
                             <button>-15'</button>
                             <button>25'</button>
@@ -48,95 +57,46 @@
                         </div>
                     </div>
                     <label>
-                        <h3>Recetas con</h3>
+                        <h3>Recetas Con:</h3>
                         <div class="search-box">
                             <i class="bi bi-search"></i>
                             <input type="text" placeholder="Escribe ingredientes">
                         </div>
                     </label>
                     <label>
-                        <h3>Recetas sin</h3>
+                        <h3>Recetas Sin:</h3>
                         <div class="search-box">
                             <i class="bi bi-search"></i>
                             <input type="text" placeholder="Escribe ingredientes">
+                        </div>
+                    </label>
+                    <label>
+                        <h3>Seleccionar Ocasión:</h3>
+                        <div class="search-box">
+                            <!-- <i class="bi bi-search"></i> -->
+                            <!-- <input type="text" placeholder="Escribe ingredientes"> -->
+                            <select name="" id="" class="select-box">
+                                <option value="" disabled selected>Seleciona la ocasión</option>
+                                <option value="casual">Casuales</option>
+                                <option value="parejas">Para Parejas</option>
+                                <option value="childs">Para Niños</option>
+                                <option value="navidad">Navidad</option>
+                                <option value="halloween">Halloween</option>
+                                <option value="gracias">Día de Acción de Gracias</option>
+                                <option value="valentin">San Valentín</option>
+                                <option value="pascua">Día de Pascua</option>
+                                <option value="añonuevo">Año Nuevo</option>
+                                <option value="nochebuena">Noche Buena</option>
+                                <option value="cumpleaños">¡Felíz Cumpleaños!</option>
+                                <option value="bodas">Bodas</option>
+                            </select>
                         </div>
                     </label>
                     <button class="reset_sort">Reiniciar</button>
                 </form>
             </aside>
             <main class="recipes__container">
-                <a href="#">
-                    <article class="recipe_card">
-                        <div class="card_img"></div>
-                        <div class="card_content">
-                            <h4>Cangreburger</h4>
-                            <div class="card_details">
-                                <span>⏱ 10 min</span>
-                                <span>⭐ 5</span>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="recipe_card">
-                        <div class="card_img"></div>
-                        <div class="card_content">
-                            <h4>Cangreburger</h4>
-                            <div class="card_details">
-                                <span>⏱ 10 min</span>
-                                <span>⭐ 5</span>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="recipe_card">
-                        <div class="card_img"></div>
-                        <div class="card_content">
-                            <h4>Cangreburger</h4>
-                            <div class="card_details">
-                                <span>⏱ 10 min</span>
-                                <span>⭐ 5</span>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="recipe_card">
-                        <div class="card_img"></div>
-                        <div class="card_content">
-                            <h4>Cangreburger</h4>
-                            <div class="card_details">
-                                <span>⏱ 10 min</span>
-                                <span>⭐ 5</span>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="recipe_card">
-                        <div class="card_img"></div>
-                        <div class="card_content">
-                            <h4>Cangreburger</h4>
-                            <div class="card_details">
-                                <span>⏱ 10 min</span>
-                                <span>⭐ 5</span>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="recipe_card">
-                        <div class="card_img"></div>
-                        <div class="card_content">
-                            <h4>Cangreburger</h4>
-                            <div class="card_details">
-                                <span>⏱ 10 min</span>
-                                <span>⭐ 5</span>
-                            </div>
-                        </div>
-                    </article>
-                </a>
+                <h2 class="recipe_category">Recetas Casuales</h2>
                 <a href="#">
                     <article class="recipe_card">
                         <div class="card_img"></div>
@@ -174,31 +134,451 @@
                     </article>
                 </a>
                 
+
+                <h2 class="recipe_category">Recetas para Parejas</h2>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <h2 class="recipe_category">Recetas para Niños</h2>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <h2 class="recipe_category">Recetas de Navidad</h2>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <h2 class="recipe_category">Recetas de Halloween</h2>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <h2 class="recipe_category">Recetas de Día de Acción de Gracias</h2>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <h2 class="recipe_category">Recetas de San Valentín</h2>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <h2 class="recipe_category">Recetas de Día de Pascua</h2>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <h2 class="recipe_category">Recetas de Año Nuevo</h2>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <h2 class="recipe_category">Recetas de Noche Buena</h2>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <h2 class="recipe_category">Recetas de Felíz Cumpleaños</h2>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <h2 class="recipe_category">Recetas para Bodas</h2>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="recipe_card">
+                        <div class="card_img"></div>
+                        <div class="card_content">
+                            <h4>Cangreburger</h4>
+                            <div class="card_details">
+                                <span>⏱ 10 min</span>
+                                <span>⭐ 5</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
             </main>
 
         </section>
 
     </main>
 
-    
+
 
     <footer class="Footer">
         <div class="Footer__Icons">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-youtube"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
         </div>
 
         <p class="Footer__Copy">Copyright © 2023</p>
 
         <div class="Footer__Links">
-          <a href="#">Información legal</a>
-          <p>|</p>
-          <a href="#">Política de privacidad</a>
+            <a href="#">Información legal</a>
+            <p>|</p>
+            <a href="#">Política de privacidad</a>
         </div>
 
-      </footer>
+    </footer>
 </body>
+
 </html>
