@@ -158,3 +158,62 @@ html{
         display: none;
     }
 }
+
+
+/* Colaboración de Xardimods */
+
+.Header__a {
+    font-weight: 700;
+}
+
+.select-box {
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.recipe_category {
+    font-size: 3rem;
+    grid-column: 1 / 4;
+}
+
+@media (max-width: 412px) {
+    .recipe_category {
+        font-size: 3rem;
+        grid-column: 1 / 2;
+    }
+
+    .recipes__container { 
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .recipe_category {
+        font-size: 3rem;
+        grid-column: 1 / 3;
+    }
+
+    .recipes__container { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .recipes__container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+    .recipe_category {
+        font-size: 3rem;
+        grid-column: 1 / 4;
+    }
+}
+
+/* Fin de colaboración de Xardimods */
