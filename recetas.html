@@ -37,18 +37,28 @@
             <aside class="recipe-sort">
                 <form action="#">
                     <label>
-                        <div>
-                            <h2 style="font-size: 3rem; margin-bottom: 3rem;">Filtros</h2>
+
+                        <div class="recipes__filtros">
+                            <h2>Filtros</h2>
+                            <span class="recipes__line"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="r__icon" class="recipes__icon icon icon-tabler icon-tabler-arrow-badge-up"
+                                width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M17 11v6l-5 -4l-5 4v-6l5 -4z" />
+                            </svg>
                         </div>
 
-                        <h3 style="font-size: 1.9rem; margin-bottom: 1rem;">Búsqueda Avanzada:</h3>
-                        <div class="search-box">
+                        <div class="form__container" id="r-sort">
+                            
+                            <h3 class="recipe-sort__title--1">Búsqueda Avanzada:</h3>
+                        <div class="search-box sb-1">
                             <i class="bi bi-search"></i>
                             <input type="text" placeholder="Busca receta">
                         </div>
                     </label>
-                    <div>
-                        <h3 style="font-size: 1.87rem;">Tiempo de Preparación:</h3>
+                    <div class="recipe-sort__cooktime">
+                        <h3 class="recipe-sort__title">Tiempo de Preparación:</h3>
                         <div class="time-box">
                             <button>-15'</button>
                             <button>25'</button>
@@ -92,10 +102,91 @@
                             </select>
                         </div>
                     </label>
-                    <button class="reset_sort">Reiniciar</button>
+
+                    
+                        <button id="apply-colapse" class="apply_sort">Aplicar</button>
+                        <button id="reset-colapse" class="reset_sort">Reiniciar</button>
+                    
+
+                        </div>
+
                 </form>
             </aside>
-            <main class="recipes__container">
+            <section id="r__container" class="recipes__container">
+
+                <h2 class="highlight__title">Recetas Destacadas de la Semana</h2>
+
+
+                <section class="highlight">
+                    <div class="highlight__content">
+                        <h3 class="highlight__bg titulo_1">Paella (desde España)</h3>
+                    </div>
+                    <div>
+                        <span>⏱ 1 hr</span>
+                        <span>⭐ 4.7</span>
+                    </div>
+                </section>
+                <aside class="highlight__aside texto_1">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem asperiores cupiditate deserunt quae
+                        dolorum perspiciatis sunt culpa, labore blanditiis. Nam corporis a ducimus, quidem velit
+                        architecto ipsam vel. Perferendis, nesciunt!</p>
+                </aside>
+
+                <section class="highlight" style="grid-row: 3 / 4;">
+                    <div class="highlight__content">
+                        <h3 class="highlight__bg titulo_2"
+                            style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)) , url(https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/43/02/3/Z9lYSjJT86fzUAlIWJdH_0S9A6422.jpg); background-size: cover;">
+                            Penne (desde Italia)</h3>
+                    </div>
+                    <div>
+                        <span>⏱ 1 hr</span>
+                        <span>⭐ 4.7</span>
+                    </div>
+                </section>
+                <aside class="highlight__aside texto_2" style="grid-row: 3 / 4" ;>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem asperiores cupiditate deserunt quae
+                        dolorum perspiciatis sunt culpa, labore blanditiis. Nam corporis a ducimus, quidem velit
+                        architecto ipsam vel. Perferendis, nesciunt!</p>
+                </aside>
+
+                <section class="highlight" style="grid-row: 4 / 5;">
+                    <div class="highlight__content">
+                        <h3 class="highlight__bg titulo_3"
+                            style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)) , url(https://www.unileverfoodsolutions.com.mx/dam/global-ufs/mcos/NOLA/calcmenu/recipes/MX-recipes/general/sushi-empanizado/main-header.jpg); background-size: cover;">
+                            Sushi (desde Japón)</h3>
+                    </div>
+                    <div>
+                        <span>⏱ 1 hr</span>
+                        <span>⭐ 4.7</span>
+                    </div>
+                </section>
+                <aside class="highlight__aside texto_3" style="grid-row: 4 / 5" ;>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem asperiores cupiditate deserunt quae
+                        dolorum perspiciatis sunt culpa, labore blanditiis. Nam corporis a ducimus, quidem velit
+                        architecto ipsam vel. Perferendis, nesciunt!</p>
+                </aside>
+
+                <section class="highlight" style="grid-row: 5 / 6;">
+                    <div class="highlight__content">
+                        <h3 class="highlight__bg titulo_4"
+                            style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)) , url(https://canalcocina.es/medias/images/1408MarionEnTailandiaCap8SumThomPawpawSalad.jpg); background-size: cover; background-position: right;">
+                            Som Tam (desde Tailandia)</h3>
+                    </div>
+                    <div>
+                        <span>⏱ 1 hr</span>
+                        <span>⭐ 4.7</span>
+                    </div>
+                </section>
+                <aside class="highlight__aside texto_4" style="grid-row: 5 / 6;">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem asperiores cupiditate deserunt quae
+                        dolorum perspiciatis sunt culpa, labore blanditiis. Nam corporis a ducimus, quidem velit
+                        architecto ipsam vel. Perferendis, nesciunt!</p>
+                </aside>
+
+
+
+
+
                 <h2 class="recipe_category">Recetas Casuales</h2>
                 <a href="#">
                     <article class="recipe_card">
@@ -133,7 +224,7 @@
                         </div>
                     </article>
                 </a>
-                
+
 
                 <h2 class="recipe_category">Recetas para Parejas</h2>
                 <a href="#">
@@ -553,9 +644,9 @@
                     </article>
                 </a>
 
-            </main>
+                </>
 
-        </section>
+            </section>
 
     </main>
 
@@ -579,6 +670,9 @@
         </div>
 
     </footer>
+
+
+    <script src="JS/app.js"></script>
 </body>
 
 </html>
