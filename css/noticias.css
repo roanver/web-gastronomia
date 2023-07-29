@@ -1,299 +1,224 @@
-.noticias__wrapper{
+/* Globales */
+.noticias_wrapper{
     width: min(100%, 1200px);
     margin: 4rem auto 0;
 }
 
-.noticias__wrapper a{
+.noticias_wrapper a{
     text-decoration: none;
 }
 
-.noticias__header{
+
+
+/* Header */
+
+.notheader{
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 4rem;
 }
 
-.noticias__header h1{
-    font-weight: bold;
-}
+    .notheader h1{
+        font-weight: bold;
+    }
 
-/* Main */
 
-.mainaside__container{
+
+/* General Wrapper */
+
+.mainaside_container{
     display: grid;
+    height: 69rem;
     grid-template-columns: 2fr 1fr;
     gap: 4rem;
 }
 
-/* Main Grid */
+        .mainaside_container h2{
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
 
-.recientes__grid{
-    margin-top: 2rem;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-}
 
-.rgrid__element{
+
+/* Main Recientes */
+
+.notrecientes{
     width: 100%;
-    height: 20rem;
-    padding: 1rem;
-    background-image: url(../img/sandwich3.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 0.8rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
-    transition: transform 0.4s;
 }
 
-.rgrid__element:hover{
-    transform: scale(1.04);
-}
+    .recientes__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 
-.rgrid__element h3{
-    color: white;
-    font-weight: bold;
-    font-size: 2.3rem
-}
+        .rgrid__element{
+            width: 100%;
+            height: 20rem;
+            padding: 1rem;
+            background-position: center;
+            background-size: cover;
+            border-radius: 0.8rem;
+            box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s;
+            display: flex;
+            align-items: flex-end;
+        }
 
-                                .rgrid__element1{
-                                    grid-column: 1 / 3;
-                                }
+                        .rgrid__element:hover{
+                            transform: scale(1.04);
+                        }
 
-                                .rgrid__element2{
-                                    background-image: url(../img/chef3.jpg);
+            .rgrid__element h3{
+                font-weight: 600;
+                color: white;
+            }
 
-                                }
+                /* Grid Element */
+                        .element1{
+                            grid-column: 1 / 3;
+                            background-image: url(../img/sandwich3.jpg);
+                        }
 
-                                .rgrid__element3{
-                                    background-image: url(../img/img2.jpg);
-                                    background-position: right;
-                                }
+                        .element2{
+                            background-image: url(../img/chocolate.jpg);
+                            background-position: right 70% bottom 30%;
+                        }
 
-                                .rgrid__element4{
-                                    background-image: url(../img/mujer-chef.jpg);
-                                }
-                                .rgrid__element4 h3{
-                                    color: black;
-                                }
+                        .element3{
+                            background-image: url(../img/juice2.jpg);
+                        }
 
-                                .rgrid__element5{
-                                    background-image: url(../img/knifeimg.jpg);
-                                }
+                        .element4{
+                            background-image: url(../img/licgastronomia.png);
+                        }
 
-                                .rgrid__element6{
-                                    background-image: url(../img/juice2.jpg);
-                                }
+                        .element5{
+                            background-image: url(../img/mujer-chef.jpg);
+                        }
 
-                                .rgrid__element7{
-                                    grid-column: 2 / 4;
-                                    background-image: url(../img/kitchenimage.jpg);
-                                }
+                        .element6{
+                            background-image: url(../img/knifeimg.jpg);
+                        }
+
+                        .element7{
+                            grid-column: 2 / 4;
+                            background-image: url(../img/kitchenimage.jpg);
+                        }
+
 
 
 /* Sidebar */
 
-.noticias__sidebar{
+.notsidebar{
+    width: 100%;
+    height: 100%;
+    padding: 0 ;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 4rem;
 }
 
+    /* Categorías Búsqueda*/
 
-/* Categorías */
+    .sidebar__categorias{
+        width: 100%;
+        height: 44rem;
+        padding: 0 1.5rem;
+    }
 
-.categorias__bloque{
-    height: 100%;
-    padding: 2rem 2rem 3rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+        .categorias__elementcontainer{
+            height: 39rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+            .categorias__element{
+                background-color: var(--primario);
+                padding: 1.5rem;
+                border: 0.4rem solid transparent;
+                border-radius: 0.8rem;
+                transition: all 0.3s;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .categorias__element svg{
+                max-width: 3rem;
+                max-height: 3rem;
+            }
+
+                .categorias__element:hover{
+                    background-color: transparent;
+                    border: 0.4rem solid var(--primario);
+                }
+
+
+    /* Redes Sociales */
+
+    .sidebar__socialmedia{
+        width: 100%;
+        height: 21rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        background-image: url(../img/meatbgimg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+        .sidebar__socialmedia h2{
+            color: white;
+        }
+
+        .smgrid__container{
+            width: 100%;
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            align-self: center;
+        }
+
+        .smgrid__element{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .smgrid__element svg{
+                width: 5rem;
+                height: 5rem;
+                fill: white;
+                margin: 0;
+                transition: transform .3s;
+            }
+
+                .smgrid__element svg:hover{
+                    transform: scale(1.10);
+                }
+
+
+/* Separador */
+.separator{
+    width: min(100%, 1200px);
+    height: .5rem;
+    background-color: var(--primario);
+    margin: 4rem auto;
 }
 
-.categorias__bloque h2{
-    font-weight: 600;
-    color: var(--quinto);
+/* Forum */
+.forum_wrapper{
+    width: min(100%, 1200px);
+    height: 220rem; /* eliminable xd */
+    margin: 0 auto;
+    background-color: lightgoldenrodyellow;
 }
 
-.categorias{
-    height: 100%;
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.categorias a{
-    color: black;
+.forum_wrapper a{
     text-decoration: none;
-}
-
-
-.categorias__article{
-    background-color: var(--primario);
-    padding: 1.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 0.4rem solid transparent;
-    border-radius: 0.4rem;
-    transition: all 0.3s;
-}
-
-.categorias__article:hover{
-    background-color: transparent;
-    border: 0.4rem solid var(--primario);
-}
-
-.categorias__article svg{
-    max-width: 2.5rem;
-    max-height: 2.5rem;
-}
-
-
-/* Redes Sociales */
-
-.redes__container{
-    background-image: url(../img/meatbgimg.png);
-    padding: 2rem 2rem 3rem 2rem;
-    height: 22rem;
-    background-position: center;
-    background-size: cover;
-    border-radius: 0.8rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
-}
-
-.redes__container h2{
-    color: white;
-    font-weight: 600;
-}
-
-.redes__grid{
-    width: 100%;
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    align-self: center;
-}
-
-.redes__icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.redes__icon svg{
-    width: 5rem;
-    height: 5rem;
-    fill: white;
-    margin: 0;
-    transition: transform .3s;
-}
-
-.redes__icon svg:hover{
-    transform: scale(1.10);
-}
-
-
-/* Foro */
-
-.forumwrap{
-    width: 100%;
-    margin-top: 8rem;
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    gap: 4rem;
-}
-
-.forum{
-    width: 100%;
-}
-
-.forum__post{
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    background-color: #f1f1f1;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
-}
-
-.post__img{
-    width: 100%;
-    height: 40rem;
-    background-image: url(../img/juice1.jpg);
-    background-position: center;
-    background-size: cover;
-
-}
-
-.post__text{
-    margin: 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.post__text h3{
-    font-weight: bold;
-}
-
-.post__stats{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-}
-
-.poststats__icons{
-    display: flex;
-    gap: 2rem;
-}
-
-.poststats__icons svg{
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-/* Forum Account */
-.account{
-    padding: 1rem;
-    border-radius: 0.8rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
-    max-height: 30rem;
-}
-
-.username{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 2rem;
-    margin: 0 1rem 1rem 0;
-}
-
-.username svg{
-    height: 3rem;
-    width: 3rem;
-}
-
-.account__separator{
-    width: 100%;
-    height: 0.4rem;
-    background-color: var(--primario);
-}
-
-.user__status{
-    margin: 2.5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.stat__1,
-.stat__2,
-.stat__3{
-    display: flex;
-    justify-content: space-between;
 }
